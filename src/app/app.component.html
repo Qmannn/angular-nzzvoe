@@ -1,0 +1,20 @@
+<nb-layout center>
+	<nb-layout-header>Change options through service Demo</nb-layout-header>
+
+	<nb-layout-column>
+		<p>This is a demo of the spinner whith dynamic options(Change through service), it'll hide after 5 seconds automatically.</p>
+
+		<nb-card accent="danger">
+			<nb-card-header>Spinner Container</nb-card-header>
+			<nb-card-body class="card-body">
+				<ngx-spinner>
+					<p class="loading">Loading Awesomeness...</p>
+				</ngx-spinner>
+			</nb-card-body>
+		</nb-card>
+		<button nbButton status="success" (click)="showSpinner()">Start Spinner</button>
+    <button nbButton status="info" (click)="changeOptions()">Change Options</button>
+	</nb-layout-column>
+
+	<nb-layout-footer>ngx-spinner</nb-layout-footer>
+</nb-layout>
